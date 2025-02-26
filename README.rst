@@ -39,7 +39,7 @@ The serial transmission and reception are defined in `uart_device.c`.
    3. Place the interface into the index: line 76 `static struct UART_Device *g_uart_devices[] = {&g_uart0_dev, &g_uart1_dev};`
 
 `main.c`
-   The Modbus initialization is implemented in `main.c`.
+The Modbus initialization is implemented in `main.c`.
    1. Define a Modbus structure: `modbus_t *ctx;`
    2. Configure Modbus RTU parameters: `ctx = modbus_new_st_rtu("uart1", 9600, 'N', 8, 1);`
    3. Set the device ID: `modbus_set_slave(ctx, 1);`
