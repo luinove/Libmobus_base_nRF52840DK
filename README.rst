@@ -32,16 +32,16 @@ How to change the serial port
 *****************************
 `uart_device.c`: 
 The serial transmission and reception are defined in `uart_device.c`.
-1. Select the UART device node: line 13 `#define UART0_DEVICE_NODE DT_CHOSEN(name)`
-   1. The `name` is defined in the `chosen` section of the Devicetree overlay file.
-   2. The `relevant parameters`(bandrate .etc) are defined in the corresponding interface section of the Devicetree overlay file.
-2. Define private function interfaces: line 73 `static struct UART_Device g_uart0_dev = {"uart0", uart_init, uart_send, uart_recv, uart_flush, DEVICE_DT_GET(UART0_DEVICE_NODE)};``
-3. Place the interface into the index: line 76 `static struct UART_Device *g_uart_devices[] = {&g_uart0_dev, &g_uart1_dev};`
+   1. Select the UART device node: line 13 `#define UART0_DEVICE_NODE DT_CHOSEN(name)`
+      1. The `name` is defined in the `chosen` section of the Devicetree overlay file.
+      2. The `relevant parameters`(bandrate .etc) are defined in the corresponding interface section of the Devicetree overlay file.
+   2. Define private function interfaces: line 73 `static struct UART_Device g_uart0_dev = {"uart0", uart_init, uart_send, uart_recv, uart_flush, DEVICE_DT_GET(UART0_DEVICE_NODE)};``
+   3. Place the interface into the index: line 76 `static struct UART_Device *g_uart_devices[] = {&g_uart0_dev, &g_uart1_dev};`
 
 `main.c`
-The Modbus initialization is implemented in `main.c`.
-1. Define a Modbus structure: `modbus_t *ctx;`
-2. Configure Modbus RTU parameters: `ctx = modbus_new_st_rtu("uart1", 9600, 'N', 8, 1);`
-3. Set the device ID: `modbus_set_slave(ctx, 1);`
-4. Read register data: `modbus_read_registers(ctx, 0x06, 1, temp); `
-   The meaning of this command is to read 1 register starting from address 06 and store the data into `temp`.
+   The Modbus initialization is implemented in `main.c`.
+   1. Define a Modbus structure: `modbus_t *ctx;`
+   2. Configure Modbus RTU parameters: `ctx = modbus_new_st_rtu("uart1", 9600, 'N', 8, 1);`
+   3. Set the device ID: `modbus_set_slave(ctx, 1);`
+   4. Read register data: `modbus_read_registers(ctx, 0x06, 1, temp); `
+      The meaning of this command is to read 1 register starting from address 06 and store the data into `temp`.
