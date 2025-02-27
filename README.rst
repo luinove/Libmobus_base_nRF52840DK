@@ -103,3 +103,7 @@ The Modbus initialization is implemented in `main.c`.
 | 584       | 64        | 32        |
 | 984A/B/X  | 64        | 32        |
 | 984-X8X   | 1000      | 125       |
+
+|x|y|
+|-|-|
+|1|1|
