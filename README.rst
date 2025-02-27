@@ -61,6 +61,7 @@ Problem encountered
                   | 984-X8X    | 1000      | 125       |
                   +------------+-----------+-----------+
 
+
                   Note:  `984-X8X` refers to 984 slot-mount models(984-385, -685, etc).
                   For the 884, the processing time for multiple data is as follows:
                      Read 768 coils:   14 scans       Force single coil:   3  scans
