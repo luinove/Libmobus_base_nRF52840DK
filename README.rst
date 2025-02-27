@@ -95,16 +95,3 @@ The Modbus initialization is implemented in `main.c`.
    4. Read register data: `modbus_read_registers(ctx, 0x06, 1, temp); `
       The meaning of this command is to read 1 register starting from address 06 and store the data into `temp`.
 
-| Name      | Discretes | Registers |
-|-----------|-----------|-----------|
-| Micro 84  | 16        | 4         |
-| 184/384   | 800       | 100       |
-| 484       | 32        | 16        |
-| 584       | 64        | 32        |
-| 984A/B/X  | 64        | 32        |
-| 984-X8X   | 1000      | 125       |
-
-|From|To|
-|-|-|
-|nrf52840DK P1.01 | ttl_485 TXD|
-|nrf52840DK P1.02 | ttl_485 RXD|
