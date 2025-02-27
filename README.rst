@@ -48,7 +48,7 @@ Problem encountered
          (D)   Modbus functions 1 through 4, 15, and 16 permit the master to request more data than can be processed 
                   during the time alloted for servicing the slave's Modbus port. If the slave cannot process all of the data,
                   It will buffer the data and process it at the end of the subsequently scans.
-                  The amount of the data that can be processed during one service period at the Modbus port is as follows:、
+                  The amount of the data that can be processed during one service period at the Modbus port is as follows:
 
                   | Name      | Discretes | Registers |
                   |-----------|-----------|-----------|
