@@ -49,14 +49,16 @@ Problem encountered
                   during the time alloted for servicing the slave's Modbus port. If the slave cannot process all of the data,
                   It will buffer the data and process it at the end of the subsequently scans.
                   The amount of the data that can be processed during one service period at the Modbus port is as follows:
+
                      |name       |Discretes  |Registers|
-                     |          -|          -|        -|
+                     |-----------|-----------|---------|
                      |Micro 84   | 16        |4        |
                      |184/384    | 800       |100      |
                      |484        | 32        |16       |
                      |584        | 64        |32       |
                      |984A/B/X   | 64        |32       |
                      |984-X8X    | 1000      |125      |
+                     
                   Note:  `984-X8X` refers to 984 slot-mount models(984-385, -685, etc).
                   For the 884, the processing time for multiple data is as follows:
                      Read 768 coils:   14 scans       Force single coil:   3  scans
