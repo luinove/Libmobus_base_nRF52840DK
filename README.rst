@@ -104,5 +104,7 @@ The Modbus initialization is implemented in `main.c`.
 | 984A/B/X  | 64        | 32        |
 | 984-X8X   | 1000      | 125       |
 
-|x|y|
-|1|1|
+|From|To|
+|-|-|
+|nrf52840DK P1.01 | ttl_485 TXD|
+|nrf52840DK P1.02 | ttl_485 RXD|
