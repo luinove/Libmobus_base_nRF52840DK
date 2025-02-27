@@ -49,7 +49,7 @@ Problem encountered
                   during the time alloted for servicing the slave's Modbus port. If the slave cannot process all of the data,
                   It will buffer the data and process it at the end of the subsequently scans.
                   The amount of the data that can be processed during one service period at the Modbus port is as follows:
-                     ||Discretes|Registers|
+                     | |Discretes|Registers|
                      |-|-|-|
                      |Micro 84   | 16    |4    |
                      |184/384    | 800   |100  |
