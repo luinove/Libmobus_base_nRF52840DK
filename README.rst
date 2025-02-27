@@ -50,14 +50,14 @@ Problem encountered
                   It will buffer the data and process it at the end of the subsequently scans.
                   The amount of the data that can be processed during one service period at the Modbus port is as follows:
 
-                  |name       |Discretes  |Registers|
-                  |----|---------|---------|
-                  |Micro 84   | 16        |4        |
-                  |184/384    | 800       |100      |
-                  |484        | 32        |16       |
-                  |584        | 64        |32       |
-                  |984A/B/X   | 64        |32       |
-                  |984-X8X    | 1000      |125      |
+                  |name|Discretes|Registers|
+                  |-|-|-|
+                  |Micro 84|16|4|
+                  |184/384|800|100|
+                  |484|32|16|
+                  |584|64|32|
+                  |984A/B/X|64|32|
+                  |984-X8X|1000|125|
 
                   Note:  `984-X8X` refers to 984 slot-mount models(984-385, -685, etc).
                   For the 884, the processing time for multiple data is as follows:
