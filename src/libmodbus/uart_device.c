@@ -6,7 +6,7 @@
 
 #include "uart_device.h"
 #include <zephyr/logging/log.h>
-// LOG_MODULE_REGISTER(uart_device, LOG_LEVEL_DBG);
+LOG_MODULE_REGISTER(uart_device, LOG_LEVEL_DBG);
 
 
 #define UART0_DEVICE_NODE DT_CHOSEN(zephyr_shell_uart)
