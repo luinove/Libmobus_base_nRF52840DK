@@ -5,6 +5,7 @@
 #include <zephyr/logging/log.h>
 #include "libmodbus/modbus.h"
 #include "libmodbus/uart_device.h"
+
 LOG_MODULE_REGISTER(main, LOG_LEVEL_DBG);
 
 int main(void)
